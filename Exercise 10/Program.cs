@@ -22,9 +22,26 @@
             //prompt for and get user choice
             Console.WriteLine("please enter 1, 2, 3, or 4");
             choice = int.Parse(Console.ReadLine());
-            Console.WriteLine(choice);
-
-        }
+            //Console.WriteLine(choice);
+            
+                if(choice == 1)
+                {
+                    Console.WriteLine("starting new game!!");
+                }
+                else if(choice == 2)
+                {
+                    Console.WriteLine("loading game...");
+                }
+                else if (choice == 3)
+                {
+                    Console.WriteLine("open options");
+                }
+                else if(choice > 4 || choice < 1)
+                { 
+                    Console.WriteLine("not a valid. choice please enter 1, 2, 3, or 4");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
